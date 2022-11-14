@@ -60,8 +60,8 @@ public class ReportRestController {
         return theReport;
     }
 
-    // add mapping for DELETE /reports/{repordId} - delete report
-    @DeleteMapping("/reports/{repordId}")
+    // add mapping for DELETE /reports/{reportId} - delete report
+    @DeleteMapping("/reports/{reportId}")
     public String deleteReport(@PathVariable int reportId) {
 
         Report tempReport = reportService.findById(reportId);
